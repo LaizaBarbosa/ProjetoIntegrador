@@ -26,7 +26,7 @@ JavaScript: Linguagem de programação para adicionar interatividade e funcional
 
 GitHub: Plataforma de hospedagem de código-fonte que permite o compartilhamento e colaboração do projeto.
 
-## *OBSERVAÇÂO: Esse site foi hospedado no plataforma de nuvem Azure.
+## *OBSERVAÇãO: Esse site foi hospedado no plataforma de nuvem Azure.
 
 
 Protótipo:
