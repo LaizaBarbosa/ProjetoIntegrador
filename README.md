@@ -32,3 +32,5 @@ GitHub: Plataforma de hospedagem de código-fonte que permite o compartilhamento
 Protótipo:
 https://www.figma.com/file/XEyDA3upCrr9hxn2KQY1QG/Projeto?type=design&node-id=0%3A1&t=f0F76SiOocoZIPbT-1
 
+Link Azure (Site Hospedado)
+https://projetointegrador.z13.web.core.windows.net/
