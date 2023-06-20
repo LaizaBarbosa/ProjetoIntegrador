@@ -1,7 +1,7 @@
 # Projeto Integrador
-Site do Senai
+Site do SENAI
 
-Este é o repositório do site do curso Desenvolvimento de Sistemas criado por estudantes do SENAI. O objetivo deste projeto é desenvolver um site moderno, intuitivo e informativo para promover e fornecer informações sobre as atividades do curso técnico em específico.
+Este é o repositório do site do Curso Técnico em Desenvolvimento de Sistemas criado por estudantes do SENAI. O objetivo deste projeto é desenvolver um site moderno, intuitivo e informativo para promover e fornecer informações sobre as atividades do curso técnico em específico.
 
 
 # Sobre o SENAI
