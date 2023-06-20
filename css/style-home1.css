@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+*{
+    color: #ffffff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.img_fundo{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 140%;
+}
+
+nav{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+
+}
+
+.logo{
+    max-width: 50px;
+    max-height: 80px;
+    z-index: 10;
+    
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 80px;/
+}
+
+.nav-item{
+    transition: all 400ms ease-in;
+    font-weight: bold;
+    list-style: none;
+}
+
+.nav-item:hover{
+    transform: scale(120%);
+    border-bottom: solid 2px #ff0000;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #ff0000;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.imagem_logo{
+    max-width: 100px;
+    max-height: 70px;
+    align-content: center;
+
+}
+
+.dropdown-menu{
+    position: absolute;
+    /* box-shadow: 0 0 2px #ff0000; */
+    display: none;
+}
+
+.dropdown-menu a{
+    font-size: 0.745rem;
+    display: block;
+    padding: 7px 0;
+}
+
+.dropdown-menu a:hover{
+    width: 90px;
+    background-color: #ff0000;
+    transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    transition: ease-in-out 0.5s;
+}
+
+/* titulo */
+.box_titulo{
+    position: relative;
+    top: 10rem;
+    /* justify-content: center; */
+    display: flex;
+    margin-left: 70px;
+    /* transition: ease-in-out 0.4s; */
+}
+.titulo{
+    width: 400px;
+    font-family: 'Anek Latin', sans-serif;
+    align-content: center;
+    margin-bottom: 100px;
+    font-weight: 300;
+}
+
+.titulo b{
+    color: #ff0000;
+    font-size: 110%;
+    font-family: 'Anek Latin', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.btn button {
+    width: 180px;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ff0000;
+    border-radius: 20px;
+    font-size: x-small;
+    font-weight: 300;
+    transition: all 400ms ease-in;
+    margin-top: 10rem;
+    margin-left: 70px;
+    border: 1px solid #ff0000;
+    letter-spacing: 1.5px;
+}
+
+.btn button:hover {
+    transform: scale(110%);
+    background-color: transparent;
+    color: #ff0000;
+}
+
+/* main */
+main{
+    background-color: black;
+    margin-top: 65vh;
+}
+
+/* sobre o curso */
+.curso{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100vw;
+    /* margin-bottom: 30px; */
+}
+
+.txt_unidade_curricular{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding: 10px;
+    /* width: 583px;
+    height: 304px; */
+    justify-items: center;
+    font-size: 23px;
+}
+
+.sobre_curso{
+    margin-top: 13vh
+}
+
+.sobre_curso h1{
+    letter-spacing: 2px;
+}
+
+.sobre_curso hr{
+    border: 1px solid #ff0000;
+    margin-left: 0;
+    width: 300px;
+}
+
+/* requisitos de acesso */
+.requisitos_acesso{
+    margin-left: 30px;
+    margin-top: 20vh;
+}
+
+.requisitos_acesso hr{
+    border: 1px solid #ff0000;
+    margin-left: 0;
+    width: 400px;
+}
+
+/* ilustração */
+.box_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    /* margin-bottom: 20vh; */
+}
+
+.foto_home{
+    gap: 15px;
+    max-width: 420px;
+    max-height: 420px;
+}
+
+.foto_home:last-child{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+/* Organização curricular */
+/* linha vermelha decorativa */
+.linha{
+    display: block;
+    width: 30vw;
+    border-bottom: solid 2px red;
+}
+
+.box_titulo2{
+    display: flex;
+    justify-content: center;
+}
+.titulo_curricular{
+    text-align: center;
+    width: 30vw;
+    font-size: 2.5rem;
+    margin-top: 14vh;
+}
+
+
+/* conteúdo da unidade curricular */
+.titulo_semestre{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box_disciplina{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.disciplina{
+    /* height: 25vh; */
+    width: 15vw;
+    text-align: center;
+    align-items: center;
+    background-color: #414141;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.disciplina::after, 
+.disciplina::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.disciplina::before{
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #fff;
+    transform: scaleX(0);
+}
+
+.disciplina::after{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #fff;
+    transform: scaleY(0);
+}
+.disciplina:hover{
+    border-radius: 0;
+}
+
+.disciplina:hover::before{
+    transform: scaleY(1);
+}
+
+.disciplina:hover::after{
+    transform: scaleX(1);
+}
+
+.nome{
+    font-size: 1.5rem;
+}
+
+.total_horas_semestre{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.total_horas_semestre h2{
+    color: #000;
+}
+
+/* foto do grupo */
+.foto_grupo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+}
+
+.foto_grupo img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.foto_grupo h1{
+    font-family: 'Anek Latin', sans-serif;
+    letter-spacing: 1px;
+    color: #ff0000;
+}
+
+/* Footer / Rodapé */
+footer {
+    background-color: #515151;
+    color: #ffffff;
+    display: flex;
+    height: fit-content;
+    width: 100vw;
+    height: fit-content;
+}
+
+.mainFooter {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    margin: 30px 150px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.textFooter {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    gap: 50px;
+}
+
+
+.tituloFooter {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.inicioFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: fit-content;
+    width: fit fit-content;
+}
+
+.inicioFooter a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.inicioFooter p {
+    margin: 0px 0px;
+}
+
+.inicioFooter a:hover {
+    border-bottom: 2px solid #ff0000;
+}
+
+.contatoFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contatoFooter a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contatoFooter a:hover{
+    border-bottom: 2px solid #ff0000;
+}
+
+.contatoFooter img {
+    height: 25px;
+    width: 25px;
+}
+
+.contatoFooter section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 25px;
+}
+
+.contatoFooter section p{
+    margin: 0px 0px;
+}
+
+.textoLocalizacao {
+    display: flex;
+    gap: 10px;
+}
+
+.textoLocalizacao p{
+    margin: 0;
+}
+
+.iconesMidiasSociais {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    height: fit-content;
+    margin: auto 0;
+}
+
+/* Adicionando responsividade */
+/* main */
+@media (max-width:992px){
+    .box_disciplina{
+        gap: 30px;
+    }
+}
+
+/* hamburguer */
+@media (max-width:768px){
+    .hamburguer{
+        display: block;
+    }
+    
+    .suporte{
+        display: none;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: absolute;
+        left: -200%;
+        top: 0;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: black;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.4s;
+        
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .box_titulo.active{
+        margin-top: 150px;
+    }
+
+    .titulo{
+        margin-bottom: 15px;
+    }
+
+    .unidade_curricular{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .txt_unidade_curricular{
+        font-size: 15px;
+    }
+
+    .box_img{
+        justify-content: center;
+    }
+
+    .foto_home{
+        width: 70%;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        position: static;
+        transition: ease-in-out 0.5s;
+    }
+
+    .img_fundo{
+        width: 120%;
+        height: 140%;
+    }
+
+    .sobre_curso hr{
+        display: none;
+    }
+
+    .requisitos_acesso hr{
+        display: none;
+    }
+
+    .btn button{
+        margin-top: 15rem;
+    }
+
+    .foto_grupo img{
+        width: 70%;
+    }
+}
+
+@media (max-width: 558px) {
+    html{
+        font-size: 90%;
+    }
+
+    .titulo{
+        font-size: 1.7rem;
+        width: 300px;
+    }
+
+    .btn button{
+        width: 140px;
+        height: 35px;
+        font-size: xx-small;
+        margin-top: 15rem;
+    }
+
+    .box_disciplina{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .disciplina{
+        width: 25vw;
+    }
+
+    .total_horas_semestre{
+        width: 12rem;
+        font-size: .6rem;
+    }
+
+    .titulo_curricular{
+        font-size: 1.5rem;
+    }
+
+    .foto_grupo{
+        margin-bottom: 10vh;
+    }
+
+    .foto_grupo img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 430px) {
+    .img_fundo{
+        width: 200%;
+    }
+
+    .box_img{
+        display: none;
+    }
+
+    .curso{
+        grid-template-columns: 0;
+    }
+
+    .sobre_curso h1{
+        margin-left: 2vh;
+        width: 300px;
+    }
+
+    .sobre_curso hr{
+        display: block;
+        margin-left: 2vh;
+        width: 250px;
+    }
+
+    .txt_unidade_curricular{
+        width: 300px;
+    }
+
+    .requisitos_acesso{
+        margin-left: 2vh;
+        margin-top: 5vh;
+        width: 400px;
+    }
+
+    .requisitos_acesso hr{
+        display: block;
+        width: 300px;
+    }
+}
+
+/* footer */
+@media (max-width: 430px) {
+    .mainFooter{
+        margin: 30px 25px;
+        text-align: center;
+    }
+
+    .textFooter{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contatoFooter section {
+        justify-content: center;
+    }
+}
